@@ -149,19 +149,6 @@
     "dataProviders": [
       {
         "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
-        "sensorID": "d136b6ea-3950-4691-bf56-c84ec7d89d72",
-        "storageID": "5cb05c9c-9e08-4fa1-8731-ff4ff948bdc1",
-        "excludedOutputs": [],
-        "liveDataTimeout": 10.0,
-        "latestRecordSource": "STREAM",
-        "maxFois": 10,
-        "offeringID": "urn:mysos:offering02",
-        "name": "Fake GPS",
-        "description": "Fake GPS sensor",
-        "enabled": true
-      },
-      {
-        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
         "sensorID": "d136b6ea-3950-4691-bf56-c84ec7d89d73",
         "storageID": "5cb05c9c-9e08-4fa1-8731-ff4ff948bdc2",
         "excludedOutputs": [],
@@ -175,16 +162,6 @@
       },
       {
         "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
-        "sensorID": "urn:android:device:e6e0f548c893362e",
-        "excludedOutputs": [],
-        "liveDataTimeout": 600.0,
-        "latestRecordSource": "STREAM",
-        "maxFois": 10,
-        "offeringID": "urn:android:device:e6e0f548c893362e-sos",
-        "enabled": true
-      },
-      {
-        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
         "sensorID": "urn:android:spotreport:e6e0f548c893362e",
         "excludedOutputs": [],
         "liveDataTimeout": 600.0,
@@ -195,32 +172,74 @@
       },
       {
         "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
-        "sensorID": "urn:android:ble_beacon:e6e0f548c893362e",
+        "sensorID": "urn:android:device:e6e0f548c893362e",
         "excludedOutputs": [],
         "liveDataTimeout": 600.0,
         "latestRecordSource": "STREAM",
         "maxFois": 10,
-        "offeringID": "urn:android:ble_beacon:e6e0f548c893362e-sos",
+        "offeringID": "urn:android:device:e6e0f548c893362e-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:android:device:1617823b51decc32",
+        "excludedOutputs": [],
+        "liveDataTimeout": 600.0,
+        "latestRecordSource": "STREAM",
+        "maxFois": 10,
+        "offeringID": "urn:android:device:1617823b51decc32-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:android:ble_beacon:1617823b51decc32",
+        "excludedOutputs": [],
+        "liveDataTimeout": 600.0,
+        "latestRecordSource": "STREAM",
+        "maxFois": 10,
+        "offeringID": "urn:android:ble_beacon:1617823b51decc32-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorDataProviderConfig",
+        "sensorID": "urn:android:spotreport:1617823b51decc32",
+        "excludedOutputs": [],
+        "liveDataTimeout": 600.0,
+        "latestRecordSource": "STREAM",
+        "maxFois": 10,
+        "offeringID": "urn:android:spotreport:1617823b51decc32-sos",
         "enabled": true
       }
     ],
     "dataConsumers": [
       {
         "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
-        "sensorID": "urn:android:device:e6e0f548c893362e",
-        "offeringID": "urn:android:device:e6e0f548c893362e-sos",
-        "enabled": true
-      },
-      {
-        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
         "sensorID": "urn:android:spotreport:e6e0f548c893362e",
         "offeringID": "urn:android:spotreport:e6e0f548c893362e-sos",
         "enabled": true
       },
       {
         "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
-        "sensorID": "urn:android:ble_beacon:e6e0f548c893362e",
-        "offeringID": "urn:android:ble_beacon:e6e0f548c893362e-sos",
+        "sensorID": "urn:android:device:e6e0f548c893362e",
+        "offeringID": "urn:android:device:e6e0f548c893362e-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:android:device:1617823b51decc32",
+        "offeringID": "urn:android:device:1617823b51decc32-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:android:ble_beacon:1617823b51decc32",
+        "offeringID": "urn:android:ble_beacon:1617823b51decc32-sos",
+        "enabled": true
+      },
+      {
+        "objClass": "org.sensorhub.impl.service.sos.SensorConsumerConfig",
+        "sensorID": "urn:android:spotreport:1617823b51decc32",
+        "offeringID": "urn:android:spotreport:1617823b51decc32-sos",
         "enabled": true
       }
     ],
@@ -275,39 +294,6 @@
     "autoStart": true
   },
   {
-    "objClass": "org.sensorhub.impl.client.sta.STAClientConfig",
-    "sensorID": "urn:android:spotreport:e6e0f548c893362e",
-    "excludedOutputs": [],
-    "staEndpoint": {
-      "objClass": "org.sensorhub.impl.comm.HTTPConfig",
-      "resourcePath": "/sensorhub/sta/v1.0",
-      "remotePort": 8282,
-      "user": "admin",
-      "password": "admin@SCIRA2019",
-      "enableTLS": true,
-      "remoteHost": "scira.georobotix.io",
-      "localAddress": "AUTO"
-    },
-    "connection": {
-      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAConnectionConfig",
-      "maxQueueSize": 10,
-      "maxConnectErrors": 10,
-      "checkReachability": true,
-      "connectTimeout": 3000,
-      "reconnectPeriod": 10000,
-      "reconnectAttempts": 0
-    },
-    "staOptionsConfig": {
-      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAOptionsConfig",
-      "sensorID": 602,
-      "dsID": 402
-    },
-    "id": "95eaccfe-b300-4ad4-acb1-07b650c0a570",
-    "moduleClass": "org.sensorhub.impl.client.sta.STAClient",
-    "name": "New STA Client",
-    "autoStart": false
-  },
-  {
     "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
     "id": "urn:android:device:e6e0f548c893362e",
     "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
@@ -322,10 +308,127 @@
     "autoStart": true
   },
   {
+    "objClass": "org.sensorhub.impl.client.sta.STAClientConfig",
+    "sensorID": "urn:android:spotreport:e6e0f548c893362e",
+    "excludedOutputs": [],
+    "staEndpoint": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAHTTPConfig",
+      "ignorePort": true,
+      "resourcePath": "/SensorHub/SensorThings/v1.0/Observations",
+      "remotePort": 80,
+      "user": "botts",
+      "password": "scira04",
+      "enableTLS": true,
+      "remoteHost": "ogc-hub.compusult.com",
+      "localAddress": "AUTO"
+    },
+    "connection": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAConnectionConfig",
+      "maxQueueSize": 10,
+      "maxConnectErrors": 10,
+      "checkReachability": false,
+      "connectTimeout": 3000,
+      "reconnectPeriod": 10000,
+      "reconnectAttempts": 0
+    },
+    "staOptionsConfig": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAOptionsConfig",
+      "sensorID": 32,
+      "dsID": 233,
+      "foiID": 33
+    },
+    "id": "91a33056-9355-4ffd-abe0-da3cfc51712c",
+    "moduleClass": "org.sensorhub.impl.client.sta.STAClient",
+    "name": "New STA Client",
+    "autoStart": false
+  },
+  {
+    "objClass": "org.sensorhub.impl.client.sta.STAClientConfig",
+    "sensorID": "urn:android:spotreport:e6e0f548c893362e",
+    "excludedOutputs": [],
+    "staEndpoint": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAHTTPConfig",
+      "ignorePort": false,
+      "resourcePath": "/sensorhub/sta/v1.0/observations",
+      "remotePort": 8000,
+      "enableTLS": false,
+      "remoteHost": "localhost",
+      "localAddress": "AUTO"
+    },
+    "connection": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAConnectionConfig",
+      "maxQueueSize": 10,
+      "maxConnectErrors": 10,
+      "checkReachability": true,
+      "connectTimeout": 3000,
+      "reconnectPeriod": 10000,
+      "reconnectAttempts": 0
+    },
+    "staOptionsConfig": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAOptionsConfig",
+      "sensorID": 0,
+      "dsID": 0,
+      "foiID": 0
+    },
+    "id": "95c4b2f6-5990-476d-8f85-f7364a6bf172",
+    "moduleClass": "org.sensorhub.impl.client.sta.STAClient",
+    "name": "New STA Client",
+    "autoStart": false
+  },
+  {
     "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
-    "id": "urn:android:ble_beacon:e6e0f548c893362e",
+    "id": "urn:android:device:1617823b51decc32",
     "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
-    "name": "BLE Scanner [MyDevice]",
+    "name": "Android Sensors [MyDevice2]",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.client.sta.STAClientConfig",
+    "sensorID": "urn:android:spotreport:1617823b51decc32",
+    "excludedOutputs": [],
+    "staEndpoint": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAHTTPConfig",
+      "ignorePort": true,
+      "resourcePath": "/SensorHub/SensorThings/v1.0/Observations",
+      "remotePort": 80,
+      "user": "botts",
+      "password": "scira04",
+      "enableTLS": true,
+      "remoteHost": "ogc-hub.compusult.com",
+      "localAddress": "AUTO"
+    },
+    "connection": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAConnectionConfig",
+      "maxQueueSize": 10,
+      "maxConnectErrors": 10,
+      "checkReachability": true,
+      "connectTimeout": 3000,
+      "reconnectPeriod": 10000,
+      "reconnectAttempts": 0
+    },
+    "staOptionsConfig": {
+      "objClass": "org.sensorhub.impl.client.sta.STAClientConfig$STAOptionsConfig",
+      "sensorID": 32,
+      "dsID": 233,
+      "foiID": 33
+    },
+    "id": "cc40b086-bdbf-4e26-ae50-88b410830c3a",
+    "moduleClass": "org.sensorhub.impl.client.sta.STAClient",
+    "name": "New STA Client",
+    "autoStart": false
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
+    "id": "urn:android:ble_beacon:1617823b51decc32",
+    "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
+    "name": "BLE Scanner [MyDevice2]",
+    "autoStart": true
+  },
+  {
+    "objClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensorConfig",
+    "id": "urn:android:spotreport:1617823b51decc32",
+    "moduleClass": "org.sensorhub.impl.sensor.swe.SWETransactionalSensor",
+    "name": "Spot Report [MyDevice2]",
     "autoStart": true
   }
 ]
